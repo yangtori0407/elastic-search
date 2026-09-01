@@ -1,0 +1,49 @@
+{
+    "index":  "manga-books",
+    "document_count":  50000,
+    "seed":  20260901,
+    "id_field":  "manga_id",
+    "files":  {
+                  "bulk":  "manga-books-50000.ndjson",
+                  "sample":  "manga-books-sample-30.ndjson"
+              },
+    "field_kinds":  [
+                        {
+                            "name":  "manga_id",
+                            "kind":  "id"
+                        },
+                        {
+                            "name":  "genre",
+                            "kind":  "choice"
+                        },
+                        {
+                            "name":  "title",
+                            "kind":  "template"
+                        },
+                        {
+                            "name":  "description",
+                            "kind":  "template"
+                        },
+                        {
+                            "name":  "status",
+                            "kind":  "weighted_choice"
+                        },
+                        {
+                            "name":  "start_year",
+                            "kind":  "integer"
+                        },
+                        {
+                            "name":  "volume_count",
+                            "kind":  "integer"
+                        },
+                        {
+                            "name":  "paper_price",
+                            "kind":  "choice"
+                        }
+                    ],
+    "generated_at":  "deterministic-from-seed",
+    "fixed_document_count":  3,
+    "settings_sha256":  "3C919EB984E50174BBA74725D6C6159F12804B72D5CDE85A0C3FB0408C8D80E8",
+    "bulk_sha256":  "A3D0E03E9F7603CE161D14085FB14977CAE4D68626B39EA1D128D224BD3FAB59",
+    "mapping_sha256":  "22573591A75DF1DC2F1E11CF665C794D5C12746D7250D3A4A291035AE6D93DF1"
+}

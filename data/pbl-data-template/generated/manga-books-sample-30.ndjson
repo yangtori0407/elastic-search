@@ -1,0 +1,60 @@
+{"index":{"_index":"manga-books","_id":"MANGA-00001"}}
+{"manga_id":"MANGA-00001","title":"장송의 프리렌","description":"마왕을 쓰러뜨린 용사 일행의 모험 이후, 엘프 마법사 프리렌이 인간을 알아가기 위해 다시 여행을 떠나는 판타지 이야기","genre":"판타지","status":"연재중","start_year":2020,"volume_count":15,"paper_price":7000}
+{"index":{"_index":"manga-books","_id":"MANGA-00002"}}
+{"manga_id":"MANGA-00002","title":"하이큐!!","description":"배구에 매료된 히나타 쇼요가 카라스노 고등학교 배구부에서 동료들과 함께 성장하며 전국 무대에 도전하는 스포츠 이야기","genre":"스포츠","status":"완결","start_year":2012,"volume_count":45,"paper_price":5500}
+{"index":{"_index":"manga-books","_id":"MANGA-00003"}}
+{"manga_id":"MANGA-00003","title":"지옥락","description":"사형수 가비마루가 무죄 방면을 조건으로 불로불사의 선약을 찾기 위해 수수께끼의 섬으로 향하는 다크 판타지 이야기","genre":"판타지","status":"완결","start_year":2018,"volume_count":13,"paper_price":6000}
+{"index":{"_index":"manga-books","_id":"MANGA-00004"}}
+{"manga_id":"MANGA-00004","genre":"판타지","title":"판타지 만화 4","description":"판타지 장르의 이야기를 다룬 만화입니다.","status":"연재중","start_year":2026,"volume_count":11,"paper_price":4500}
+{"index":{"_index":"manga-books","_id":"MANGA-00005"}}
+{"manga_id":"MANGA-00005","genre":"공포","title":"공포 만화 5","description":"공포 장르의 이야기를 다룬 만화입니다.","status":"연재중","start_year":2023,"volume_count":25,"paper_price":6500}
+{"index":{"_index":"manga-books","_id":"MANGA-00006"}}
+{"manga_id":"MANGA-00006","genre":"드라마","title":"드라마 만화 6","description":"드라마 장르의 이야기를 다룬 만화입니다.","status":"완결","start_year":2013,"volume_count":52,"paper_price":4500}
+{"index":{"_index":"manga-books","_id":"MANGA-00007"}}
+{"manga_id":"MANGA-00007","genre":"드라마","title":"드라마 만화 7","description":"드라마 장르의 이야기를 다룬 만화입니다.","status":"완결","start_year":2012,"volume_count":32,"paper_price":4500}
+{"index":{"_index":"manga-books","_id":"MANGA-00008"}}
+{"manga_id":"MANGA-00008","genre":"판타지","title":"판타지 만화 8","description":"판타지 장르의 이야기를 다룬 만화입니다.","status":"연재중","start_year":2017,"volume_count":25,"paper_price":7000}
+{"index":{"_index":"manga-books","_id":"MANGA-00009"}}
+{"manga_id":"MANGA-00009","genre":"판타지","title":"판타지 만화 9","description":"판타지 장르의 이야기를 다룬 만화입니다.","status":"완결","start_year":2022,"volume_count":63,"paper_price":7000}
+{"index":{"_index":"manga-books","_id":"MANGA-00010"}}
+{"manga_id":"MANGA-00010","genre":"코미디","title":"코미디 만화 10","description":"코미디 장르의 이야기를 다룬 만화입니다.","status":"연재중","start_year":2020,"volume_count":52,"paper_price":6500}
+{"index":{"_index":"manga-books","_id":"MANGA-00011"}}
+{"manga_id":"MANGA-00011","genre":"판타지","title":"판타지 만화 11","description":"판타지 장르의 이야기를 다룬 만화입니다.","status":"연재중","start_year":2026,"volume_count":23,"paper_price":6000}
+{"index":{"_index":"manga-books","_id":"MANGA-00012"}}
+{"manga_id":"MANGA-00012","genre":"일상","title":"일상 만화 12","description":"일상 장르의 이야기를 다룬 만화입니다.","status":"연재중","start_year":2025,"volume_count":63,"paper_price":5000}
+{"index":{"_index":"manga-books","_id":"MANGA-00013"}}
+{"manga_id":"MANGA-00013","genre":"SF","title":"SF 만화 13","description":"SF 장르의 이야기를 다룬 만화입니다.","status":"연재중","start_year":2022,"volume_count":56,"paper_price":7000}
+{"index":{"_index":"manga-books","_id":"MANGA-00014"}}
+{"manga_id":"MANGA-00014","genre":"미스터리","title":"미스터리 만화 14","description":"미스터리 장르의 이야기를 다룬 만화입니다.","status":"연재중","start_year":2011,"volume_count":58,"paper_price":6000}
+{"index":{"_index":"manga-books","_id":"MANGA-00015"}}
+{"manga_id":"MANGA-00015","genre":"SF","title":"SF 만화 15","description":"SF 장르의 이야기를 다룬 만화입니다.","status":"완결","start_year":2021,"volume_count":16,"paper_price":4500}
+{"index":{"_index":"manga-books","_id":"MANGA-00016"}}
+{"manga_id":"MANGA-00016","genre":"공포","title":"공포 만화 16","description":"공포 장르의 이야기를 다룬 만화입니다.","status":"완결","start_year":2025,"volume_count":35,"paper_price":5500}
+{"index":{"_index":"manga-books","_id":"MANGA-00017"}}
+{"manga_id":"MANGA-00017","genre":"SF","title":"SF 만화 17","description":"SF 장르의 이야기를 다룬 만화입니다.","status":"연재중","start_year":2018,"volume_count":67,"paper_price":7000}
+{"index":{"_index":"manga-books","_id":"MANGA-00018"}}
+{"manga_id":"MANGA-00018","genre":"드라마","title":"드라마 만화 18","description":"드라마 장르의 이야기를 다룬 만화입니다.","status":"연재중","start_year":2025,"volume_count":60,"paper_price":5000}
+{"index":{"_index":"manga-books","_id":"MANGA-00019"}}
+{"manga_id":"MANGA-00019","genre":"스포츠","title":"스포츠 만화 19","description":"스포츠 장르의 이야기를 다룬 만화입니다.","status":"연재중","start_year":2019,"volume_count":8,"paper_price":4500}
+{"index":{"_index":"manga-books","_id":"MANGA-00020"}}
+{"manga_id":"MANGA-00020","genre":"일상","title":"일상 만화 20","description":"일상 장르의 이야기를 다룬 만화입니다.","status":"연재중","start_year":2026,"volume_count":70,"paper_price":5000}
+{"index":{"_index":"manga-books","_id":"MANGA-00021"}}
+{"manga_id":"MANGA-00021","genre":"일상","title":"일상 만화 21","description":"일상 장르의 이야기를 다룬 만화입니다.","status":"연재중","start_year":2023,"volume_count":10,"paper_price":7000}
+{"index":{"_index":"manga-books","_id":"MANGA-00022"}}
+{"manga_id":"MANGA-00022","genre":"액션","title":"액션 만화 22","description":"액션 장르의 이야기를 다룬 만화입니다.","status":"연재중","start_year":2023,"volume_count":20,"paper_price":7000}
+{"index":{"_index":"manga-books","_id":"MANGA-00023"}}
+{"manga_id":"MANGA-00023","genre":"로맨스","title":"로맨스 만화 23","description":"로맨스 장르의 이야기를 다룬 만화입니다.","status":"완결","start_year":2018,"volume_count":37,"paper_price":6000}
+{"index":{"_index":"manga-books","_id":"MANGA-00024"}}
+{"manga_id":"MANGA-00024","genre":"공포","title":"공포 만화 24","description":"공포 장르의 이야기를 다룬 만화입니다.","status":"연재중","start_year":2023,"volume_count":58,"paper_price":4500}
+{"index":{"_index":"manga-books","_id":"MANGA-00025"}}
+{"manga_id":"MANGA-00025","genre":"미스터리","title":"미스터리 만화 25","description":"미스터리 장르의 이야기를 다룬 만화입니다.","status":"연재중","start_year":2013,"volume_count":41,"paper_price":5000}
+{"index":{"_index":"manga-books","_id":"MANGA-00026"}}
+{"manga_id":"MANGA-00026","genre":"코미디","title":"코미디 만화 26","description":"코미디 장르의 이야기를 다룬 만화입니다.","status":"연재중","start_year":2020,"volume_count":5,"paper_price":4500}
+{"index":{"_index":"manga-books","_id":"MANGA-00027"}}
+{"manga_id":"MANGA-00027","genre":"스포츠","title":"스포츠 만화 27","description":"스포츠 장르의 이야기를 다룬 만화입니다.","status":"완결","start_year":2025,"volume_count":17,"paper_price":5500}
+{"index":{"_index":"manga-books","_id":"MANGA-00028"}}
+{"manga_id":"MANGA-00028","genre":"공포","title":"공포 만화 28","description":"공포 장르의 이야기를 다룬 만화입니다.","status":"연재중","start_year":2016,"volume_count":67,"paper_price":6500}
+{"index":{"_index":"manga-books","_id":"MANGA-00029"}}
+{"manga_id":"MANGA-00029","genre":"미스터리","title":"미스터리 만화 29","description":"미스터리 장르의 이야기를 다룬 만화입니다.","status":"연재중","start_year":2021,"volume_count":65,"paper_price":4500}
+{"index":{"_index":"manga-books","_id":"MANGA-00030"}}
+{"manga_id":"MANGA-00030","genre":"SF","title":"SF 만화 30","description":"SF 장르의 이야기를 다룬 만화입니다.","status":"완결","start_year":2011,"volume_count":39,"paper_price":6000}
