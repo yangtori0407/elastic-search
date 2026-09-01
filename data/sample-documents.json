@@ -1,0 +1,32 @@
+[
+  {
+    "manga_id": "MANGA-00001",
+    "title": "장송의 프리렌",
+    "description": "마왕을 쓰러뜨린 용사 일행의 모험 이후, 엘프 마법사 프리렌이 인간을 알아가기 위해 다시 여행을 떠나는 판타지 이야기",
+    "genre": "판타지",
+    "status": "연재중",
+    "start_year": 2020,
+    "volume_count": 15,
+    "paper_price": 7000
+  },
+  {
+    "manga_id": "MANGA-00002",
+    "title": "하이큐!!",
+    "description": "배구에 매료된 히나타 쇼요가 카라스노 고등학교 배구부에서 동료들과 함께 성장하며 전국 무대에 도전하는 스포츠 이야기",
+    "genre": "스포츠",
+    "status": "완결",
+    "start_year": 2012,
+    "volume_count": 45,
+    "paper_price": 5500
+  },
+  {
+    "manga_id": "MANGA-00003",
+    "title": "지옥락",
+    "description": "사형수 가비마루가 무죄 방면을 조건으로 불로불사의 선약을 찾기 위해 수수께끼의 섬으로 향하는 다크 판타지 이야기",
+    "genre": "판타지",
+    "status": "완결",
+    "start_year": 2018,
+    "volume_count": 13,
+    "paper_price": 6000
+  }
+]

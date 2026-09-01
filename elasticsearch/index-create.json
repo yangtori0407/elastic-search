@@ -1,0 +1,35 @@
+{
+  "settings": {
+    "number_of_shards": 1,
+    "number_of_replicas": 1
+  },
+  "mappings": {
+    "dynamic": "strict",
+    "properties": {
+      "manga_id": {
+        "type": "keyword"
+      },
+      "title": {
+        "type": "text"
+      },
+      "description": {
+        "type": "text"
+      },
+      "genre": {
+        "type": "keyword"
+      },
+      "status": {
+        "type": "keyword"
+      },
+      "start_year": {
+        "type": "integer"
+      },
+      "volume_count": {
+        "type": "integer"
+      },
+      "paper_price": {
+        "type": "integer"
+      }
+    }
+  }
+}

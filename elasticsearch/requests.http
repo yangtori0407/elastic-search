@@ -1,0 +1,72 @@
+# Kibana Dev Tools Console에는 요청 하나씩 복사해 실행한다.
+
+# 현재는 요청을 저장한 상태다. 실제 응답은 evidence/day-02-data.md에 기록한다.
+
+### V1-T09-C · 실제 cluster 상태 확인
+
+GET /_cat/nodes?v
+
+GET /_cat/nodes?v&h=name,ip,node.role,master,version
+
+GET /_cat/indices?v
+
+### V1-T09-P · index 생성 후 mapping 확인 요청
+
+# index 생성 전에는 404 index_not_found_exception이 정상일 수 있다.
+
+GET /manga-books/_mapping
+
+### V1-T12-P · 존재 확인
+
+# 이미 존재하면 아래 PUT을 다시 실행하지 않는다.
+
+GET /manga-books
+
+### V1-T12-P · index가 없을 때만 생성
+
+PUT /manga-books
+{
+"settings": {
+"number_of_shards": 1,
+"number_of_replicas": 1
+},
+"mappings": {
+"dynamic": "strict",
+"properties": {
+"manga_id": {
+"type": "keyword"
+},
+"title": {
+"type": "text"
+},
+"description": {
+"type": "text"
+},
+"genre": {
+"type": "keyword"
+},
+"status": {
+"type": "keyword"
+},
+"start_year": {
+"type": "integer"
+},
+"volume_count": {
+"type": "integer"
+},
+"paper_price": {
+"type": "integer"
+}
+}
+}
+}
+
+### V1-T12-P · 생성 후 검증
+
+GET /manga-books
+
+GET /manga-books/_mapping
+
+GET /manga-books/_count
+
+GET /_cat/shards/manga-books?v
