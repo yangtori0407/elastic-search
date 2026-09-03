@@ -47,7 +47,9 @@
   → KQL을 삭제한 뒤 문서 수가 다시 20,000건으로 돌아오면 성공
 
 * 캡처 파일:
-  → 실제 캡처 파일명 입력
+  → `evidence/day-04-practice/p01-q02-kql-filter.png`
+
+  ![문제 2 KQL 적용 결과](./p01-q02-kql-filter.png)
 
 * KQL이 데이터를 삭제한 것인가? 이유:
   → 아니다. `in_stock : false` KQL은 Elasticsearch의 데이터를 삭제한 것이 아니라, Discover 화면에서 `in_stock` 값이 `false`인 문서만 필터링해서 보여준 것이다. KQL을 제거하면 다시 전체 20,000건을 확인할 수 있다.
