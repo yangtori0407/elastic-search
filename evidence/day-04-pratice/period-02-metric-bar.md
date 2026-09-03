@@ -40,13 +40,16 @@
 
 ### 설정·결과 입력
 
-- Bar 방향:
-- x축 또는 category 차원:
-- y축 또는 Metric:
-- Number of values:
-- 표시된 category 수:
-- 각 category 값이 공통 기준과 일치하는가:
+- Bar 방향: 'vertical'
+- x축 또는 category 차원: 'Top Values of category'
+- y축 또는 Metric: 'Counter of records'
+- Number of values: '8'
+- 표시된 category 수: '8'
+- 각 category 값이 공통 기준과 일치하는가: 일치
 - 캡처 파일:
+  - `evidence/day-04-practice/p02-q02-category-bar.png`
+
+![문제 2 카테고리별 상품 수](./p02-q02-category-bar.png)
 
 ## (변형·필수) 문제 3 — Bar 방향 한 가지만 바꿔 비교
 
