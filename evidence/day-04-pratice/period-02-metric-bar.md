@@ -17,13 +17,16 @@
 
 ### 결과 입력
 
-- Dashboard 이름:
-- 사용한 계산:
-- 실제 Metric 값:
-- 시간 범위:
-- KQL/filter/control 상태:
-- 정상/보류/오류와 이유:
+- Dashboard 이름: '전체 상품 수'
+- 사용한 계산: 'counts of records'
+- 실제 Metric 값: '20,000'
+- 시간 범위: '2025-01-01 ~ 2026-12-31'
+- KQL/filter/control 상태: 없음
+- 정상/보류/오류와 이유: 정상. 전체 상품 데이터 20,000건이 Metric에 동일하게 표시되었다.
 - 캡처 파일:
+  - `evidence/day-04-practice/p02-q01-total-products-metric.png`
+
+![문제 1 전체 상품 수 Metric](./p02-q01-total-products-metric.png)
 
 ## (공통·필수) 문제 2 — category Bar 제작
 

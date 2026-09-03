@@ -164,11 +164,11 @@ GET /products/_search
 
 ```
 
-- 자기 index:
-- `_count`:
-- `hits.total.value`:
-- 반환 문서 수:
-- 판정과 근거:
+- 자기 index: maga-books
+- `_count`: 50000
+- `hits.total.value`: 10000
+- 반환 문서 수: 5
+- 판정과 근거: _count와 전체 검색 결과 수를 비교하고, size
 
 ## (개인) 문제 5 — 결과 카드 field 설계
 
