@@ -8,124 +8,17 @@
 
 - 이 주제를 선택한 이유: 만화 장르로 상세한 조건으로 검색하여 내가 원하는 만화책을 찾을 수 있는 검색을 만들고 싶다.
 
-2. 실행 순서
+## 2. 실행 순서
 
-1. Docker 환경 시작
+1. Docker 환경 시작: Docker Desktop을 실행한 뒤 저장소의 `docker` 폴더로 이동하여 `.env.example`을 `.env`로 복사하고 `.\start.ps1`을 실행한다. PowerShell 실행이 제한된 경우 `Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass`를 적용하며, `.\status.ps1`으로 Elasticsearch와 Kibana의 실행 상태를 확인한다.
 
-Docker Desktop을 실행한 뒤 docker 폴더에서 Elasticsearch와 Kibana를 실행합니다.
+2. index와 mapping 생성: Kibana의 `Dev Tools → Console`에서 `manga-books` index의 존재 여부를 확인하고, index가 없는 경우 `elasticsearch/index-create.json`에 정의한 mapping을 기준으로 `manga-books` index를 생성한다. 생성 후 `GET /manga-books/_mapping`으로 mapping이 정상적으로 적용되었는지 확인한다.
 
-cd docker
-Copy-Item .env.example .env
-Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
-.\start.ps1
+3. 데이터 생성·Bulk 적재: `data/manga-books` 폴더에서 `my-data-settings.ps1`의 설정을 이용해 Seed `20260901`로 50,000건의 만화책 데이터를 생성한다. 생성된 NDJSON 데이터를 `validate-data.ps1`로 검증한 뒤 `load-data.ps1`을 실행하여 `manga-books` index에 Bulk 적재하고, `GET /manga-books/_count`로 50,000건이 적재되었는지 확인한다.
 
-실행 상태 확인:
+4. 검색 요청 실행: Kibana의 `Dev Tools → Console`에서 `manga-books` index를 대상으로 검색 요청을 실행한다. `multi_match`로 제목과 설명을 검색하고, `term`으로 장르와 연재 상태를 필터링하며, `range`로 가격 범위를 검색하고, `bool`을 이용해 여러 검색 조건을 조합한다.
 
-.\status.ps1
-
-Elasticsearch: http://localhost:9200
-
-Kibana: http://localhost:5601
-
-2. index와 mapping 생성
-
-Kibana의 Dev Tools → Console에서 manga-books index가 있는지 확인합니다.
-
-GET /manga-books
-
-index가 없다면 elasticsearch/index-create.json의 mapping을 이용해 manga-books index를 생성합니다.
-
-생성 후 mapping 확인:
-
-GET /manga-books/_mapping
-
-주요 field:
-
-manga_id      keyword
-title         text
-description   text
-genre         keyword
-status        keyword
-start_year    integer
-volume_count  integer
-paper_price   integer
-
-3. 데이터 생성·Bulk 적재
-
-data/manga-books 폴더로 이동합니다.
-
-cd data\manga-books
-
-50,000건의 만화 데이터를 생성합니다.
-
-.\generator\generate-data.ps1 `
-  -SettingsFile .\my-data-settings.ps1 `
-  -MappingFile ..\..\elasticsearch\index-create.json
-
-생성한 데이터를 검증합니다.
-
-.\validate-data.ps1 `
-  -SettingsFile .\my-data-settings.ps1 `
-  -MappingFile ..\..\elasticsearch\index-create.json
-
-검증이 끝나면 Elasticsearch에 Bulk 적재합니다.
-
-.\load-data.ps1 `
-  -SettingsFile .\my-data-settings.ps1 `
-  -MappingFile ..\..\elasticsearch\index-create.json `
-  -DockerDirectory ..\..\docker
-
-적재 결과 확인:
-
-GET /manga-books/_count
-
-정상적으로 적재되었다면 50,000건이 조회됩니다.
-
-4. 검색 요청 실행
-
-Kibana Dev Tools → Console에서 manga-books를 대상으로 검색을 실행합니다.
-
-주요 검색 방식:
-
-multi_match: 제목과 설명 검색
-
-term: 장르, 연재 상태처럼 정확한 값 검색
-
-range: 가격 범위 검색
-
-bool: 여러 조건 조합
-
-예시 — 제목과 설명에서 판타지 검색:
-
-GET /manga-books/_search
-{
-  "query": {
-    "multi_match": {
-      "query": "판타지",
-      "fields": ["title", "description"]
-    }
-  }
-}
-
-5. Kibana Dashboard 확인
-
-manga-books Data View를 생성합니다.
-
-Data View 이름: manga-books
-Index pattern: manga-books
-Time field: 사용하지 않음
-
-이후 Discover에서 데이터가 정상적으로 조회되는지 확인하고, Lens와 Dashboard에서 시각화를 만듭니다.
-
-예시:
-
-전체 만화 작품 수
-
-장르별 작품 수
-
-장르별 평균 가격
-
-genre, status 조건별 필터링
+5. Kibana Dashboard 확인: `manga-books` Data View를 생성한 뒤 Discover에서 데이터와 field가 정상적으로 조회되는지 확인한다. 이후 Lens와 Dashboard를 이용해 전체 작품 수, 장르별 작품 수, 장르별 평균 가격 등을 시각화하고 `genre`, `status` 등의 조건을 이용해 데이터를 필터링한다.
 
 ## 3. 데이터와 mapping
 
