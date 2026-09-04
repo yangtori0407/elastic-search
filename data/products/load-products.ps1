@@ -5,11 +5,11 @@ param(
 
 $ErrorActionPreference = 'Stop'
 if (-not $DataFile) { $DataFile = Join-Path $PSScriptRoot 'generated\products-10000.ndjson' }
-$dockerRoot = Resolve-Path 'C:\kopo\es-5days-pbl-co-course\day-01\docker' -ErrorAction SilentlyContinue
+$dockerRoot = Resolve-Path (Join-Path $PSScriptRoot '..\..\docker') -ErrorAction SilentlyContinue
 if (-not $dockerRoot) { throw 'Docker 실습 패키지 경로를 찾지 못했습니다. 강사 배포본의 안내 경로에서 실행합니다.' }
 if (-not (Test-Path -LiteralPath $DataFile)) { throw "데이터 파일이 없습니다: $DataFile" }
 $DataFile = (Resolve-Path -LiteralPath $DataFile).Path
-. (Join-Path $PSScriptRoot '..\pbl-data-template\data-contract.ps1')
+. (Join-Path $PSScriptRoot 'data-contract.ps1')
 $null = Test-BulkFile $DataFile 'products' 10000 (Join-Path $PSScriptRoot 'product-mapping.json') 'product_id'
 
 Push-Location $dockerRoot
